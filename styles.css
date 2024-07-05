@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #e6f7f2;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.script-exemplo {
+    font-size: 1px;
+}
+
+.box-vulnerabilidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 65%;
+    max-width: 480px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 50px 2px #00000044;
+    padding: 15px;
+    min-width: 300px;
+}
+
+input {
+    padding: 5px;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid #0000006e;
+}
+
+.box-inputs{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+
+.box-inputs button {
+    padding: 5px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid #00000080;
+    background-color: #4675f8;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.script-exemplo {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.texto-exemplo {
+    margin-bottom: 15px;
+}
+
+
+@media screen and (max-width: 600px){
+    p {
+        font-size: 12px;
+    }
+
+    .script-exemplo {
+        font-size: 10px;
+    }
+
+    .resultado-script {
+        font-size: 10px;
+    }
+}

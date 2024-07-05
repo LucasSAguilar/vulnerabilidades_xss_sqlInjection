@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste de vulnerabilidades</title>
+  </head>
+  <link rel="stylesheet" href="styles.css" />
+  <body>
+    <div class="box-vulnerabilidade">
+      <h1>XSS</h1>
+      <p class="texto-exemplo">
+        Exemplo:
+        <a class="script-exemplo">&lt;img src=&quot;x&quot; onerror=&quot;alert('XSS')&quot;&gt;</a>
+      </p>
+      <form id="box-input-xss" class="box-inputs">
+        <input type="text" id="inputXSS" placeholder="Insira um XSS aqui" />
+        <button type="submit">Enviar</button>
+      </form>
+      <div class="resultado-script" id="texto-xss">O valor do campo é: <strong>XSS aqui</strong></div>
+    </div>
+    <div class="box-vulnerabilidade">
+      <h1>SQL Injection</h1>
+      <p class="texto-exemplo">
+        Exemplo: <a class="script-exemplo">"" OR "1" = "1"</a>
+      </p>
+      <form id="box-input-sql" class="box-inputs">
+        <input id="inputSQL" type="text" placeholder="Insira uma injeção de SQL aqui" />
+        <button type="submit">Enviar</button>
+      </form>
+      <p class="resultado-script">SELECT * FROM pessoas WHERE nome = <strong><a id="texto-sql">Nome aqui</a></strong></p>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
